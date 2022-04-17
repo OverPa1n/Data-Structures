@@ -55,6 +55,7 @@ class DoublyLinkedList {
         if (!this.length) {
             return void 0;
         }
+
         let currentNode = this.head;
 
         if (this.length === 1) {
@@ -67,6 +68,7 @@ class DoublyLinkedList {
         }
 
         this.length--;
+
         return currentNode;
     }
 
@@ -91,6 +93,7 @@ class DoublyLinkedList {
         if (index < 0 || index >= this.length) {
             return null;
         }
+
         let currentNode, counter;
         let halfOfList = this.length / 2;
 
@@ -102,7 +105,6 @@ class DoublyLinkedList {
                 counter++;
                 currentNode = this.head.next;
             }
-
         }
 
         if (index > halfOfList) {
@@ -115,8 +117,8 @@ class DoublyLinkedList {
             }
 
         }
-        return currentNode;
 
+        return currentNode;
     }
 
     set(value, index) {
@@ -127,6 +129,7 @@ class DoublyLinkedList {
 
             return true;
         }
+
         return false;
     }
 
