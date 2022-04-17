@@ -105,13 +105,13 @@ class SinglyLinkedList {
     }
 
     set(index, value) {
-        const findedNode = this.get(index);
+        const foundNode = this.get(index);
 
-        if (!findedNode) {
+        if (!foundNode) {
             return false;
         }
 
-        findedNode.val = value;
+        foundNode.val = value;
 
         return true;
     }
